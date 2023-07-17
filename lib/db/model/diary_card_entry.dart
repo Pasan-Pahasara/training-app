@@ -3,5 +3,9 @@ class DiaryCardEntryModel {
   final String description;
   final String username;
 
-  DiaryCardEntryModel({required this.title, required this.description, required this.username});
+  DiaryCardEntryModel({
+    required this.title,
+    required this.description,
+    required this.username,
+  });
 }
