@@ -15,7 +15,9 @@ class DiaryRepository {
       'title': diaryCardEntry.title,
       'description': diaryCardEntry.description,
       'username': diaryCardEntry.username,
-    }).then((value) => print('Diary card entry added'));
+    }).then(
+      (value) => print('Diary card entry added'),
+    );
   }
 
   Future<List<DiaryCardEntry>> getDiaryCardEntries() async {
