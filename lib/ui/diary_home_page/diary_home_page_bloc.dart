@@ -39,7 +39,10 @@ class DiaryHomeScreenBloc
     print('title name user: $username');
     if (title.isNotEmpty && description.isNotEmpty) {
       final newCardEntry = DiaryCardEntryModel(
-          title: title, description: description, username: username);
+        title: title,
+        description: description,
+        username: username,
+      );
       await _diaryRepository.addDiaryCardEntry(newCardEntry);
       emit(
         state.clone(entries: await _getAllEvent(), isSubmitting: false),
